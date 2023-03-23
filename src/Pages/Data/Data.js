@@ -7,14 +7,6 @@ import Header from "../../Components/Header/Header";
 import NavBar from "../../Components/Nav Bar/NavBar";
 
 function Data() {
-  const [selectedData, setSelectedData] = useState(null);
-  console.log(selectedData);
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const data = urlParams.get("data");
-    setSelectedData(data);
-  }, []);
-
   return (
     <div>
       <NavBar />
