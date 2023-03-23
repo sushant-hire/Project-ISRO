@@ -1,0 +1,51 @@
+.MainHeaderContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #032848;
+  padding: 0.8rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  justify-content: space-between;
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+}
+
+.ISROLogo {
+  height: 6rem;
+  width: 6.5rem;
+}
+
+.G20Logo {
+  height: 6rem;
+  width: auto;
+  filter: invert(90%);
+}
+
+.SMJLogo {
+  height: 6.5rem;
+  width: auto;
+}
+
+.HeadingsContainer {
+  text-align: center;
+}
+
+.Heading1 {
+  font-size: 1.2rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.Heading2 {
+  font-size: 1.8rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 0.25rem;
+}
+
+.Heading3 {
+  font-size: 1rem;
+  margin-block-start: 0.45em;
+  margin-block-end: 0em;
+}

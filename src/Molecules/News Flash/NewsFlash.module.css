@@ -1,0 +1,27 @@
+.MainMarqueeContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: rgb(0, 0, 94);
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+/* .NewsMarquee {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+} */
+
+.NewsMarquee {
+  white-space: nowrap;
+  overflow: hidden;
+  color: yellow;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.Gap {
+  display: inline-block;
+  width: 90rem; 
+}

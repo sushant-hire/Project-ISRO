@@ -1,0 +1,18 @@
+.MainContainer {
+  padding: 3.5rem 7rem 3.5rem 7rem;
+  height: auto;
+}
+
+.ServiceDeetsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 3rem;
+}
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

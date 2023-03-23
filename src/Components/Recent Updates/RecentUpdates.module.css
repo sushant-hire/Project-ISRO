@@ -1,0 +1,50 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+  background-color: #023867;
+  padding: 2.5rem;
+  text-align: center;
+  border-bottom: 15px solid black;
+  color: white;
+}
+
+.UpdatesImages {
+  background-color: aliceblue;
+  padding: 1rem;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+  position: relative;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.UpdatesImages:hover {
+  filter: brightness(0.7);
+}
+
+.UpdateCards {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.UpdateCard {
+  background-color: rgb(0, 0, 65);
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.UpdatesHeading {
+  font-size: 1.4rem;
+}
+
+.UpdatesDetails {
+  padding: 0.5rem;
+}
+
+
