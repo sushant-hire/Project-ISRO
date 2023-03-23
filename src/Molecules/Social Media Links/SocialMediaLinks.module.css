@@ -1,0 +1,7 @@
+.SocialMediaIcon {
+  color: white;
+}
+
+.SocialMediaIcon:hover {
+  color: yellowgreen;
+}

@@ -6,6 +6,7 @@
 
 .NavListContainer {
   display: flex;
+  align-items: center;
   gap: 1rem;
   list-style: none;
   padding: 0.5rem;
@@ -17,4 +18,50 @@
 
 .RightNavList {
   margin-left: auto;
+}
+
+ul li {
+  cursor: pointer;
+
+}
+
+ul li:hover {
+  color: yellowgreen;
+  transition: color 0.3s ease;
+
+}
+
+.Links {
+  text-decoration: none;
+  color: white;
+  border-right: 2.5px solid yellowgreen;
+}
+
+.Links li {
+  padding-right: 1rem;
+}
+
+.ContactUs {
+  text-decoration: none;
+  color: white;
+}
+
+.ContactUs:hover {
+  color: yellowgreen;
+}
+
+.NavBarSecondHalf {
+  display: flex;
+  gap: 1rem;
+  margin-left: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+.SkipToMainContent {
+  text-decoration: none;
+  color: white;
+}
+
+.SkipToMainContent:hover {
+  color: yellowgreen;
 }

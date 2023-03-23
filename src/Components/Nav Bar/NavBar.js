@@ -1,39 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import SocialMediaLinks from "../../Molecules/Social Media Links/SocialMediaLinks";
 import styles from "./NavBar.module.css";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TextIncreaseIcon from "@mui/icons-material/TextIncrease";
-import TextDecreaseIcon from "@mui/icons-material/TextDecrease";
 
 function NavBar() {
+  const navItems = [
+    { label: "English", key: "English" },
+    { label: "हिंदी", key: "Hindi" },
+    { label: "Sitemap", key: "Sitemap", path: "/data/31" },
+    { label: "RTI", key: "RTI", path: "/data/32" },
+    { label: "Career", key: "Career", path: "/data/33" },
+    { label: "Tender", key: "Tender", path: "/data/34" },
+    { label: "FAQ", key: "FAQ", path: "/data/35" },
+  ];
+
   return (
     <nav className={styles.NavBarContainer}>
       <ul className={styles.NavListContainer}>
-        <li>English </li> | <li>हिंदी</li> | <li>Sitemap</li> |{" "}
-        <li>Contact us</li> | <li>Feedback</li> | <li>RTI</li> | <li>Career</li>{" "}
-        | <li>Tender</li> |<li>FAQ</li>
-        <li className={styles.RightNavList}>
-          <FacebookIcon fontSize="small" />
-        </li>
-        <li>
-          <TwitterIcon fontSize="small" />
-        </li>
-        <li>
-          <YouTubeIcon fontSize="small" />
-        </li>
-        <li>
-          <InstagramIcon fontSize="small" />
-        </li>
-        <li>
-          <TextIncreaseIcon fontSize="small" />
-        </li>
-        <li>A</li>
-        <li>
-          <TextDecreaseIcon fontSize="small" />
-        </li>
-        <li>Skip to main content</li>
+        {navItems.map((item) => (
+          <Link to={item.path} key={item.key} className={styles.Links}>
+            {" "}
+            <li title={item.key}>{item.label}</li>
+          </Link>
+        ))}
+        <a className={styles.ContactUs} href="#ContactUs">
+          Contact us
+        </a>
+        <span className={styles.NavBarSecondHalf}>
+          <SocialMediaLinks />
+          <a className={styles.SkipToMainContent} href="#MainContent">
+            Skip to main content
+          </a>
+        </span>
       </ul>
     </nav>
   );

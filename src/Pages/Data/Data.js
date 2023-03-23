@@ -5,11 +5,10 @@ import DropdownMenu from "../../Components/Dropdown Menu/DropdownMenu";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import NavBar from "../../Components/Nav Bar/NavBar";
-import styles from "./Data.module.css";
 
 function Data() {
   const [selectedData, setSelectedData] = useState(null);
-
+  console.log(selectedData);
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const data = urlParams.get("data");
@@ -22,7 +21,9 @@ function Data() {
       <Header />
       <DropdownMenu />
       <DataBox />
-      <ContactUs />
+      <section id="ContactUs">
+        <ContactUs />
+      </section>{" "}
       <Footer />
     </div>
   );

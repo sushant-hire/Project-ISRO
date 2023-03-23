@@ -5,7 +5,10 @@
   justify-content: center;
   background-color: black;
   color: white;
-  padding-top: 1rem;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  font-size: 1.15rem;
+  color: white;
 }
 
 .SpanTag {
@@ -14,11 +17,15 @@
 
 .FixedButton {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   color: white;
   border: none;
   border-radius: 600px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: filter 0.5s;
+}
+
+.FixedButton:hover {
+  filter: hue-rotate(120deg);
 }

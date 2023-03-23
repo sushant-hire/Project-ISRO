@@ -12,7 +12,6 @@ import Video from "../../Components/Video/Video";
 import NewsFlash from "../../Molecules/News Flash/NewsFlash";
 
 function Home() {
-
   return (
     <div>
       <NavBar />
@@ -20,11 +19,15 @@ function Home() {
       <DropdownMenu />
       <NewsFlash />
       <Video />
-      <NewsAndHighlights />
+      <section id="MainContent">
+        <NewsAndHighlights />
+      </section>
       <Portals />
       <RecentUpdates />
       <UsefulLinks />
-      <ContactUs />
+      <section id="ContactUs">
+        <ContactUs />
+      </section>
       <Footer />
     </div>
   );

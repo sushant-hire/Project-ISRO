@@ -8,7 +8,6 @@
   color: white;
   gap: 2.2rem;
   border-bottom: 15px solid black;
-
 }
 
 .LinksContainer {
@@ -22,8 +21,20 @@
   border-radius: 5px;
   cursor: pointer;
   width: 14rem;
+  letter-spacing: 3px;
 }
 
 .LinksHeading:hover {
   background-color: #00182d;
+  color: white;
+}
+
+.UsefulLinks {
+  text-decoration: none;
+  color: white;
+}
+
+.UsefulLinks:hover {
+  text-decoration: none;
+  color: white;
 }
