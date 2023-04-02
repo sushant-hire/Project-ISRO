@@ -461,7 +461,7 @@ function NewsAndHighlights() {
                 "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
             }}
           >
-            <div id="carouselExampleCaptions" className="carousel slide">
+            <div id="carouselExampleCaptions" className="carousel slide" data-bs-interval="5000">
               <div className="carousel-indicators">
                 <button
                   type="button"

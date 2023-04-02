@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import styles from "./DataBox.module.css";
 import CircularProgress from "@mui/material/CircularProgress";
+import { constantData } from "../../Constant/ConstantData";
 
 function DataBox() {
   const { id } = useParams();
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:3005/constantData").then((response) => {
-      setServices(response.data);
-      console.log(response.data);
-    });
-  }, []);
+  const [services, setServices] = useState(constantData);
+  console.log(setServices)
 
   const service = services.find((s) => s.id === parseInt(id));
 

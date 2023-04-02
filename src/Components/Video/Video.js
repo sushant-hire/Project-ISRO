@@ -3,6 +3,8 @@ import ReactPlayer from "react-player";
 
 function Video() {
   return (
+
+
     <ReactPlayer
       controls
       playing
@@ -13,6 +15,9 @@ function Video() {
       url="https://youtu.be/--8ORixBXQE"
       origin="http://localhost:3000"
     />
+
+
+    
   );
 }
 
